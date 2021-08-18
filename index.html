@@ -2,11 +2,28 @@
 <html>
   <head>
     <!-- ... -->
+	<link rel="stylesheet" href="style.css">
+	<script src="dropdown.js"></script>
   </head>
   <body>
-  <h1 style="color:blue;text-align: center;">Interactive Plots</h1>
-	<figure style="width:100%">
-		<embed type="image/svg+xml" src="world2019.svg" />
-	</figure>
+  <!--<a href="plots/worldmap/worldmap.html">Quora</a>-->
+	<div class="dropdown">
+		<button onclick="myFunction()" class="dropbtn">Stackexchange Plots</button>
+		<div id="myDropdown" class="dropdown-content">
+			<a href="stack/worldmap/worldmap.html">worldmap</a>
+			<a href="stack/views/views.html">views</a>
+			<a href="stack/questions counts/questions.html">questions counts</a>
+			<a href="stack/other/other.html">other</a>
+		</div>
+	</div>
+	<div class="dropdown">
+		<button onclick="myFunction2()" class="dropbtn">Quora Plots</button>
+		<div id="myDropdown2" class="dropdown-content">
+			<a href="quora/worldmap/worldmap.html">worldmap</a>
+			<a href="stack/views/views.html">views</a>
+			<a href="stack/questions counts/questions.html">questions counts</a>
+			<a href="stack/other/other.html">other</a>
+		</div>
+	</div>
   </body>
 </html>
